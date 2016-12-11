@@ -6,7 +6,7 @@ class Hamming {
   compute (sequenceOne, sequenceTwo) {
     for (let i = 0; i < sequenceOne.length; i++) {
       if (sequenceOne[i] !== sequenceTwo[i]) {
-        hammingDistance++
+        this.hammingDistance++
       }
     }
     return this.hammingDistance
