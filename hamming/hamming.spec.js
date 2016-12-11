@@ -27,11 +27,11 @@ describe('Hamming', () => {
     expect(hamming.compute('GATACA', 'GCATAA')).toEqual(4);
   });
 
-  xit('hamming distance in very long strand', () => {
+  it('hamming distance in very long strand', () => {
     expect(hamming.compute('GGACGGATTCTG', 'AGGACGGATTCT')).toEqual(9);
   });
 
-  xit('throws error when strands are not equal length', () => {
+  it('throws error when strands are not equal length', () => {
     expect(() => hamming.compute('GGACGGATTCTG', 'AGGAC')).toThrow(
       new Error('DNA strands must be of equal length.')
     );
