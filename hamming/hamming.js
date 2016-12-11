@@ -1,15 +1,14 @@
 class Hamming {
-  constructor() {
-    this.hammingDistance = 0
-  }
-
   compute (sequenceOne, sequenceTwo) {
+    let hammingDistance = 0
+
     for (let i = 0; i < sequenceOne.length; i++) {
       if (sequenceOne[i] !== sequenceTwo[i]) {
-        this.hammingDistance++
+        hammingDistance++
       }
     }
-    return this.hammingDistance
+    
+    return hammingDistance
   }
 }
 
