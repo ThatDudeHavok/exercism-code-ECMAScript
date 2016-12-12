@@ -3,10 +3,8 @@
 // convenience to get you started writing code faster.
 //
 
-class HelloWorld {
+export default class HelloWorld {
   hello(name='World') {
     return `Hello, ${name}!`
   }
 }
-
-export default HelloWorld;
