@@ -1,4 +1,4 @@
-function isLeapYear(year) {
+export default function isLeapYear(year) {
   if (year % 4 == 0) {
     if (year % 100 == 0) {
       if (year % 400 == 0) {
@@ -9,5 +9,3 @@ function isLeapYear(year) {
     return true
   }
 }
-
-export default isLeapYear
