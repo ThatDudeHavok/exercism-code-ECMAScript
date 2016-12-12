@@ -19,6 +19,8 @@ function thing(nucleotide) {
       return 'U'
     case 'T':
       return 'A'
+    default:
+      throw new Error('Invalid input DNA.')
   }
 }
 
