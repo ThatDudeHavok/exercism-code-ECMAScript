@@ -3,24 +3,24 @@ class Transcriptor {
     let rnaStrand = ''
     for (let i = 0; i < dnaStrand.length; i++) {
       let nucleotide = dnaStrand.charAt(i)
-      rnaStrand += thing(nucleotide)
+      rnaStrand += this.transcribeDna(nucleotide)
     }
     return rnaStrand
   }
-}
 
-function thing(nucleotide) {
-  switch (nucleotide) {
-    case 'C':
-      return 'G'
-    case 'G':
-      return 'C'
-    case 'A':
-      return 'U'
-    case 'T':
-      return 'A'
-    default:
-      throw new Error('Invalid input DNA.')
+  transcribeDna(nucleotide) {
+    switch (nucleotide) {
+      case 'C':
+        return 'G'
+      case 'G':
+        return 'C'
+      case 'A':
+        return 'U'
+      case 'T':
+        return 'A'
+      default:
+        throw new Error('Invalid input DNA.')
+    }
   }
 }
 
