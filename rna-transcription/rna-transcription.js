@@ -13,6 +13,8 @@ function thing(nucleotide) {
   switch (nucleotide) {
     case 'C':
       return 'G'
+    case 'G':
+      return 'C'
   }
 }
 
