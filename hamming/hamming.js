@@ -1,4 +1,4 @@
-class Hamming {
+export default class Hamming {
   compute (sequenceOne, sequenceTwo) {
     if (sequenceOne.length != sequenceTwo.length) {
       throw new Error('DNA strands must be of equal length.')
@@ -15,5 +15,3 @@ class Hamming {
     return hammingDistance
   }
 }
-
-export default Hamming;
