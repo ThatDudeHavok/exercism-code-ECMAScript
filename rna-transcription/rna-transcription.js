@@ -1,4 +1,4 @@
-class Transcriptor {
+export default class Transcriptor {
   toRna(dnaStrand) {
     let rnaStrand = ''
     for (let i = 0; i < dnaStrand.length; i++) {
@@ -23,5 +23,3 @@ class Transcriptor {
     }
   }
 }
-
-export default Transcriptor;
