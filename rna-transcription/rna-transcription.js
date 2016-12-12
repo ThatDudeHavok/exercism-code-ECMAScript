@@ -17,6 +17,8 @@ function thing(nucleotide) {
       return 'C'
     case 'A':
       return 'U'
+    case 'T':
+      return 'A'
   }
 }
 
